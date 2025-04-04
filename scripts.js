@@ -1,5 +1,3 @@
-
-
 mapboxgl.accessToken = 'pk.eyJ1Ijoia2Fpc2VyYm9ibyIsImEiOiJjbGlkbGU0anQwMG5uM2tvY2lpc3hyaDloIn0.y4yHlSPNI_fn_pjERNk8XA';
 const map = new mapboxgl.Map({
     container: 'map-container', // container ID
@@ -12,37 +10,37 @@ const markerOptions = {
     color: '#E74FA3', // default color for the marker
 };
 
-// create the popup
+// create the popup for kx
 const popup1 = new mapboxgl.Popup({ offset: 25 }).setHTML(`
     <div style="text-align:left;">
       <p>猫狗第一次见面的地方，害羞</p>
-      <img src="https://github.com/tonybzzhao/class-3-map/blob/main/images/kx.JPG" alt="kx" style="width:100%; height:auto;">
+      <img src="https://raw.githubusercontent.com/tonybzzhao/class-3-map/main/images/kx.JPG" alt="kx" style="width:100%; height:auto;">
     </div>
-  `);
+`);
 
-// create the popup
-const popup1 = new mapboxgl.Popup({ offset: 25 }).setHTML(`
+// create the popup for ucl
+const popup2 = new mapboxgl.Popup({ offset: 25 }).setHTML(`
     <div style="text-align:left;">
       <p>猫狗一起上学的地方，开心鸭</p>
-      <img src="https://github.com/tonybzzhao/class-3-map/blob/main/images/ucl.JPG" alt="ucl" style="width:100%; height:auto;">
+      <img src="https://raw.githubusercontent.com/tonybzzhao/class-3-map/main/images/ucl.JPG" alt="ucl" style="width:100%; height:auto;">
     </div>
-  `);
+`);
 
-// create the popup
-const popup1 = new mapboxgl.Popup({ offset: 25 }).setHTML(`
+// create the popup for home1
+const popup3 = new mapboxgl.Popup({ offset: 25 }).setHTML(`
     <div style="text-align:left;">
       <p>第一代猫狗窝，地址：Flat 86, Witley Court, Coram Street, London WC1N 1HD</p>
-      <img src="https://github.com/tonybzzhao/class-3-map/blob/main/images/home1.JPG" alt="home1" style="width:100%; height:auto;">
+      <img src="https://raw.githubusercontent.com/tonybzzhao/class-3-map/main/images/home1.JPG" alt="home1" style="width:100%; height:auto;">
     </div>
-  `);
+`);
 
-// create the popup
-const popup1 = new mapboxgl.Popup({ offset: 25 }).setHTML(`
+// create the popup for home2
+const popup4 = new mapboxgl.Popup({ offset: 25 }).setHTML(`
     <div style="text-align:left;">
       <p>第二代猫狗窝，猫咪2023年4月来看狗狗。地址：Flat 403, 10 Hosier Lane, London, EC1A 9LS</p>
-      <img src="https://github.com/tonybzzhao/class-3-map/blob/main/images/home2.JPG" alt="home2" style="width:100%; height:auto;">
+      <img src="https://raw.githubusercontent.com/tonybzzhao/class-3-map/main/images/home2.JPG" alt="home2" style="width:100%; height:auto;">
     </div>
-  `);
+`);
 
 const kx = new mapboxgl.Marker(markerOptions)
     .setLngLat([-0.12460, 51.53130])
