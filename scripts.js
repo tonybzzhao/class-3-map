@@ -9,7 +9,7 @@ const map = new mapboxgl.Map({
 });
 
 const markerOptions = {
-    color: '#005D63', // default color for the marker
+    color: 'pink', // default color for the marker
 };
 
 // create the popup
