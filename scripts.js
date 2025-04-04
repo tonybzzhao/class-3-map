@@ -13,21 +13,41 @@ const markerOptions = {
 };
 
  // create the popup
-const popup1 = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Flat 86, Witley Court, Coram Street, London WC1N 1HD'
+ const popup1 = new mapboxgl.Popup({ offset: 25 }).setText(
+    '猫狗第一次见面的地方，害羞'
 );
 
  // create the popup
  const popup2 = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Flat 403, 10 Hosier Lane, London, EC1A 9LS'
+    '猫狗一起上学的地方，开心鸭'
 );
+
+ // create the popup
+const popup3 = new mapboxgl.Popup({ offset: 25 }).setText(
+    '第一代猫狗窝，地址：Flat 86, Witley Court, Coram Street, London WC1N 1HD'
+);
+
+ // create the popup
+ const popup4 = new mapboxgl.Popup({ offset: 25 }).setText(
+    '第二代猫狗窝，猫咪2023年4月来看狗狗。地址：Flat 403, 10 Hosier Lane, London, EC1A 9LS'
+);
+
+const home1 = new mapboxgl.Marker(markerOptions)
+.setLngLat([-0.12460, 51.53130])
+.setPopup(popup1)
+.addTo(map);
+
+const home1 = new mapboxgl.Marker(markerOptions)
+.setLngLat([-0.13399, 51.52452])
+.setPopup(popup2)
+.addTo(map);
 
  const home1 = new mapboxgl.Marker(markerOptions)
  .setLngLat([-0.12657, 51.52405])
- .setPopup(popup1)
+ .setPopup(popup3)
  .addTo(map);
 
 const home2 = new mapboxgl.Marker(markerOptions)
  .setLngLat([-0.10267, 51.51769])
- .setPopup(popup2)
+ .setPopup(popup4)
  .addTo(map);
